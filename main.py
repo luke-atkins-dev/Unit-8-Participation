@@ -7,9 +7,25 @@ Starter Code: No starter code used
 """
 
 def celsius_to_fahrenheit(celsius: float) -> float:
+    """
+    Converts celsius to fahrenheit
+
+    Args:
+        celsius: celsius to convert to fahrenheit
+    Returns:
+        float: (conversion)
+    """
     return (celsius * (9/5)) + 32
 
 def get_celsius() -> float:
+    """
+    Forces user to enter valid float (negative supported, no range limit)
+
+    Args:
+        None
+    Returns:
+        float: (The float representation of the celsius to be converted)
+    """
     cel = input("Enter temperature in Celsius: ")
     try:
         return float(cel)
@@ -17,12 +33,30 @@ def get_celsius() -> float:
         print("Invalid input")
     return get_celsius()
 
-def output_conversion(celsius: float, fahrenheit: float):
+def output_conversion(celsius: float, fahrenheit: float) -> None:
+    """
+    Outputs original input and conversion to output stream
+
+    Args:
+        celsius: (float) The celsius originally provided
+        fahrenheit: (float) the conversion
+    Returns:
+        None
+    """
     print(f"{celsius} degrees Celsius is equal to {fahrenheit} degrees Fahrenheit.")
 
-def main():
+def main() -> None:
+    """
+    Main entry for the program
+
+    Args:
+        None
+    Returns:
+        None
+    """
     celsius = get_celsius()
-    output_conversion(0, celsius)
+    convert = celsius_to_fahrenheit(celsius)
+    output_conversion(celsius, convert)
 
 if __name__ == "__main__":
     main()
