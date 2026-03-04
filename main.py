@@ -14,8 +14,12 @@ def get_celsius() -> float:
         print("Invalid input")
     return get_celsius()
 
+def output_conversion(celsius: float, fahrenheit: float):
+    print(f"{celsius} degrees Celsius is equal to {fahrenheit} degrees Fahrenheit.")
+
 def main():
-    pass
+    celsius = get_celsius()
+    output_conversion(0, celsius)
 
 if __name__ == "__main__":
     main()
