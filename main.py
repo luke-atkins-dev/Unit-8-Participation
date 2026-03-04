@@ -48,7 +48,7 @@ def output_conversion(celsius: float, fahrenheit: float) -> None:
     """
     print(f"{celsius} degrees Celsius is equal to {fahrenheit} degrees Fahrenheit.")
 
-# Orchestrator (Main is always orchestrator
+# Orchestrator (Main is always orchestrator)
 def main() -> None:
     """
     Main entry for the program
