@@ -6,6 +6,9 @@ Author: Luke Atkins
 Starter Code: No starter code used
 """
 
+def celsius_to_fahrenheit(celsius: float) -> float:
+    return (celsius * (9/5)) + 32
+
 def get_celsius() -> float:
     cel = input("Enter temperature in Celsius: ")
     try:
